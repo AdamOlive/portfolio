@@ -3,22 +3,53 @@
   <head>
     <title>Crayta - Hub</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="slideshow.js"></script>
   </head>
   <body>
     <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./crayta-hub.html">Experience</a>
+      <div class="navbar info"></div>
+      <div class="navbar pages">
+        <a href="./index.html">Home</a>
+        <a href="./crayta-hub.html">Experience</a>
+      </div>
     </div>
+
     <div class="main">
       <div class="section header">
         <div
           class="section background"
-          style="background-image: url('TabletopChamps.jpg')"
+          style="background-image: url('Media/TabletopChamps.jpg')"
         ></div>
         <h1>Crayta - Hub</h1>
+        <p>
+          The Hub is the ever-changing heart of Crayta, and a large part of my
+          role has been to update it with seasonal content and minigames, as
+          well as overseeing a major design refresh to ensure it was as
+          effective as possible at grabbing players' attention, and telling them
+          what Crayta's all about.
+        </p>
       </div>
+
       <div class="section post a">
-        <img src="CraytaAd6.jpg" class="post-image margin" />
+        <!-- Slideshow -->
+        <div class="post-content slideshow-container margin">
+          <div class="slide fade">
+            <img src="./Media/OldHubCursedGalleons.jpg" class="post-image" />
+            <div class="caption-text">
+              The original Hub aesthetic and layout, without seasonal theming
+            </div>
+          </div>
+
+          <div class="slide fade">
+            <img src="img3.jpg" class="post-image" />
+            <div class="caption-text">The redesigned Hub</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
         <div class="post-text margin">
           <h2>Hub Redesign</h2>
           <p>
@@ -42,6 +73,7 @@
           </p>
         </div>
       </div>
+
       <div class="section post b">
         <div class="post-text margin">
           <h2>Tabletop Champs Hub</h2>
@@ -64,7 +96,174 @@
             lengths as a proportion of overall session lengths in Crayta.
           </p>
         </div>
-        <img src="CraytaAd6.jpg" class="post-image margin" />
+        <div class="post-content margin">
+          <img src="Media/TumbleweedRidge.jpg" class="post-image" />
+          <div class="caption-text">
+            The original Hub aesthetic and layout, without seasonal theming
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section post a">
+      <!-- Slideshow -->
+      <div class="post-content slideshow-container margin">
+        <div class="slide fade">
+          <img src="./Media/OldHubCursedGalleons.jpg" class="post-image" />
+          <div class="caption-text">
+            The original Hub aesthetic and layout, without seasonal theming
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <iframe
+            class="post-video"
+            src="https://www.youtube.com/embed/OVSk2qOm4DU"
+          >
+          </iframe>
+          <div class="caption-text">The redesigned Hub</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+
+      <div class="post-text margin">
+        <h2>Harrowing High Hub</h2>
+        <p>
+          The Harrowing High art content was truly inspiring, particularly the
+          monster avatar outfits, and I wanted to create a hub that showcased
+          one of these as an NPC to inspire creators to use the outfits in their
+          own creations.
+
+          <br /><br />This hub update had a particularly ambitious game, in
+          which players could enter a school and see how long they could survive
+          for. An AI monster would hunt the players with an A* pathfinding
+          algorithm, built as a Lua package that I had also provided to
+          community creators.
+        </p>
+      </div>
+    </div>
+
+    <div class="section post b">
+      <div class="post-text margin">
+        <h2>Cybotanica Hub</h2>
+        <p>
+          With development time being extremely short for Cybotanica, I opted to
+          try a new approach with the Cybotanica Hub, using it to showcase
+          community creativity rather, than creating a minigame as most of the
+          other hubs had.
+
+          <br /><br />The Cybotanica Hub had a "sculpture garden" area that
+          showcased 3 sculptures, which were scripted to rotate weekly. They
+          were initially populated by 3 of my sculptures, which included a
+          miniature city, a robot NPC "charging up", and a dancing robot made up
+          of retro parts such as an old PC, which were attached to different
+          sockets on a hidden NPC to create the effect of a character built from
+          junk.
+        </p>
+      </div>
+
+      <!-- Slideshow -->
+      <div class="post-content slideshow-container margin">
+        <div class="slide fade">
+          <img src="./Media/OldHubCursedGalleons.jpg" class="post-image" />
+          <div class="caption-text">
+            The original Hub aesthetic and layout, without seasonal theming
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <iframe
+            class="post-video"
+            src="https://www.youtube.com/embed/OVSk2qOm4DU"
+          >
+          </iframe>
+          <div class="caption-text">The redesigned Hub</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="section post a">
+      <div class="post-content margin">
+        <img src="Media/TumbleweedRidge.jpg" class="post-image" />
+      </div>
+
+      <div class="post-text margin">
+        <h2>Cursed Galleons Hub</h2>
+        <p>
+          The Cursed Galleons season spanned across the major Hub redesign, and
+          therefore had to fit both designs seamlessly. This season was also
+          full of pirate assets, but critically we didn't have a full pirate
+          ship yet - something that would be technically as well as artistically
+          challenging to build using Crayta's voxel + mesh system.
+
+          <br /><br />I decided to build a hidden object game, with daily
+          randomised object positions, set in a pirate ship. I also built the
+          ship, from a number of carefully rotated voxel pieces giving the
+          appearance of rounded sides and smooth curves. Being contained within
+          the ship, the game could easily be transferred between hub layouts. I
+          released the ship as a community package, and it saw use in a wide
+          variety of UGC games.
+        </p>
+      </div>
+    </div>
+
+    <div class="section post b">
+      <div class="post-text margin">
+        <h2>Strength and Sorcery Hub</h2>
+        <p>
+          The Strength and Sorcery season's assets focused on two contrasting
+          themes - the "strength" side, including knights and castles, and the
+          "sorcery" side, including potions and magical woodland elements.
+
+          <br /><br />To complement the season's assets, I designed a hub with
+          each side being one of those themes, and a team-based asynchronous
+          crafting battle game that took place between them. Each week, players
+          could join one of the team's, and find ingredients hidden around the
+          Hub to craft projectiles, which were shot from a cannon at the other
+          team's side. Damage was stored as a global counter, and was reflected
+          by environmental changes, with the buildings becoming more damaged
+          over time.
+        </p>
+      </div>
+      <!-- Slideshow -->
+      <div class="post-content slideshow-container margin">
+        <div class="slide fade">
+          <img src="./Media/OldHubCursedGalleons.jpg" class="post-image" />
+          <div class="caption-text">
+            The original Hub aesthetic and layout, without seasonal theming
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <iframe
+            class="post-video"
+            src="https://www.youtube.com/embed/6dwjMX5qbyg"
+          >
+          </iframe>
+          <div class="caption-text">Gathering potion ingredients</div>
+        </div>
+
+        <div class="slide fade">
+          <iframe
+            class="post-video"
+            src="https://www.youtube.com/embed/ovMdLlBf2WI"
+          >
+          </iframe>
+          <div class="caption-text">
+            Firing a finished potion at the other team's side
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
       </div>
     </div>
   </body>
