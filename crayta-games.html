@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crayta - Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="slideshow.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar info"></div>
+      <div class="navbar pages">
+        <a href="./index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Experience</button>
+          <div class="dropdown-content">
+            <a href="./crayta-hub.html">Crayta Hub</a>
+            <a href="./crayta-games.html">Crayta Games</a>
+            <a href="./crayta-packages.html">Crayta Packages</a>
+            <a href="./personal.html">Personal Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="section header">
+        <div
+          class="section background"
+          style="background-image: url('Media/TabletopChamps.jpg')"
+        ></div>
+        <h1>Crayta - Games</h1>
+        <p>
+          I've designed and developed a number of small games in collaboration
+          with environment artists and UI designers, testing out the limits of
+          Crayta's toolset and providing design feedback on editor features,
+          such as particle effects, touch screen input systems and the Lua API.
+        </p>
+      </div>
+
+      <div class="section post a">
+        <!-- Slideshow -->
+        <div class="post-content slideshow-container margin">
+          <div class="slide fade">
+            <iframe
+              class="post-video"
+              src="https://www.youtube.com/embed/ayLOQs0BaP4"
+            >
+            </iframe>
+            <div class="caption-text">Prop Hunt, as a "Prop" player</div>
+          </div>
+
+          <div class="slide fade">
+            <iframe
+              class="post-video"
+              src="https://www.youtube.com/embed/Dcy0D25Ped0"
+            >
+            </iframe>
+            <div class="caption-text">Prop Hunt, as the Hunter</div>
+          </div>
+
+          <div class="slide fade">
+            <iframe
+              class="post-video"
+              src="https://www.youtube.com/embed/Y7460Q2MBpU"
+            >
+            </iframe>
+            <div class="caption-text">
+              Prop Hunt's second map, the Spaceship
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <div class="post-text margin">
+          <h2>Prop Hunt</h2>
+          <p>
+            Prop Hunt is one of Crayta's most played games, with over 250,000
+            plays. Prop Hunt is a game mode present in other UGC platforms, such
+            as Garry's Mod, but I tweaked the design for this one to cater for
+            Crayta's more casual, largely mobile audience.
+            <br /><br />
+            The inputs are very simple, with only one input needed for each
+            player, aside from movement. The Prop players can toggle to a
+            randomly selected prop, and the Hunter can shoot. Updates made
+            during user testing include a radar to allow the Hunter to find a
+            Prop player if they've gone too long without moving, and a CCTV
+            system so caught players can still watch the action from various
+            viewpoints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
