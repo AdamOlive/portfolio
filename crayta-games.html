@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Crayta - Hub</title>
+    <title>Crayta - Games</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="slideshow.js"></script>
   </head>
@@ -26,7 +26,7 @@
       <div class="section header">
         <div
           class="section background"
-          style="background-image: url('Media/TabletopChamps.jpg')"
+          style="background-image: url('Media/PropHuntEnvironment.jpg')"
         ></div>
         <h1>Crayta - Games</h1>
         <p>
@@ -89,6 +89,86 @@
             Prop player if they've gone too long without moving, and a CCTV
             system so caught players can still watch the action from various
             viewpoints.
+          </p>
+        </div>
+      </div>
+
+      <div class="section post b">
+        <div class="post-text margin">
+          <h2>Summer Sports</h2>
+          <p>
+            Summer Sports was a time-limited event game for summer 2022. It
+            consisted of 4 sports-based minigames in a bubbly, abstract, Fall
+            Guys-like environment. The game proved excellent for fostering
+            competition in our player community thanks to the array of
+            leaderboards and cosmetic prizes.
+            <br /><br />
+            Although the game itself was time-limited, I made it remixable, to
+            multiply its benefits by allowing the creator community to learn
+            from it, and create their own games from the solid foundations
+            provided, which proved popular with other sports-based games
+            released as a result.
+          </p>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="post-content slideshow-container margin">
+          <div class="slide fade">
+            <iframe
+              class="post-video"
+              src="https://www.youtube.com/embed/C0ZGCy6Jzks"
+            >
+            </iframe>
+            <div class="caption-text">
+              The "Dodge" minigame, a favourite, with some players playing over
+              100 times
+            </div>
+          </div>
+
+          <div class="slide fade">
+            <iframe
+              class="post-video"
+              src="https://www.youtube.com/embed/fG93sZiCLk0"
+            >
+            </iframe>
+            <div class="caption-text">The "Target Shoot" minigame</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+      </div>
+
+      <div class="section post a">
+        <div class="post-content margin">
+          <iframe
+            class="post-video"
+            src="https://www.youtube.com/embed/jYGweq-5hdM"
+          >
+          </iframe>
+          <div class="caption-text">The start of a Power Run game session</div>
+        </div>
+
+        <div class="post-text margin">
+          <h2>Power Run</h2>
+          <p>
+            I created Power Run in my own time as I wanted to push some limits
+            of Crayta that my work, at the time, wouldn't have crossed over
+            with. It's a procedurally generated endless runner with a unique
+            mechanic, that lets you jump and "spin" 90 degrees left or right,
+            and run along the walls.
+            <br /><br />
+            Not many games in Crayta had procedural generation, so I created
+            (and shared) a flexible object pooling package to handle the rapid
+            creation and destruction of track pieces and obstacles. The spin
+            mechanic was also tricky, since Crayta has no controls over gravity,
+            so the entire track rotates around you. To make this convincing, I
+            delayed the camera rotation, so it appears that the player spins,
+            and the camera "catches up". It was a fantastic test of some
+            difficult mechanics, but if I worked on it again, I'd simplify and
+            automate more of the controls to reduce complexity for the user, and
+            improve the experience for mobile.
           </p>
         </div>
       </div>
